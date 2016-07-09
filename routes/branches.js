@@ -3,7 +3,7 @@ var router = express.Router();
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
-    var obj = {
+	var obj = {
     "Departments": {
         "Department": [
             {
@@ -60,11 +60,10 @@ router.get('/', function(req, res, next) {
                         "numberofdoctorsavailable": "12,000 CAD",
                     }
                 ]
-            }
+            },
         ]
     }
 }
-
   res.send(obj);
 });
 
