@@ -49,31 +49,31 @@ var obj = {
             {
                 "doctorname": "S.Sandeep",
                 "departments": "Cardiology",
-                "branch":["Kondapur","Gachibowli","Somajiguda"],
+                "branch":["Kondapur 2PM to 3PM","Gachibowli 4PM to 5PM","Somajiguda 7PM to 8PM"],
                 "id": "card001",
             },
              {
                 "doctorname": "M.Jagan",
                 "departments": "Neurology",
-                "branch":["Kondapur","Gachibowli","Filmnagar"],
+                "branch":["Kondapur 2PM to 3PM" ,"Gachibowli 4PM to 5PM","Filmnagar 7PM to 8PM"],
                 "id": "card001",
             },
            {
                 "doctorname": "M.Ramakrishna",
                 "departments": "Endrocrinology",
-                "branch":["Kondapur","Secundrabad","Somajiguda"],
+                "branch":["Kondapur 2PM to 3PM","Secundrabad 4PM to 5PM","Somajiguda 7PM to 8PM"],
                 "id": "card001",
             },
              {
                 "doctorname": "G.Anil",
                 "departments": "Nephrology",
-                "branch":["Filmnagar","Secundrabad","Somajiguda"],
+                "branch":["Filmnagar 2PM to 3PM","Secundrabad 4PM to 5PM","Somajiguda 7PM to 8PM"],
                 "id": "card001",
             },
              {
                 "doctorname": "M.Nithesh",
                 "departments": "E.N.T",
-                "branch":["Kondapur","Gachibowli","Somajiguda"],
+                "branch":["Kondapur 2PM to 3PM","Gachibowli 4PM to 5PM","Somajiguda 7PM to 8PM"],
                 "id": "card001",
             },
         ]
