@@ -43,7 +43,7 @@ router.get('/', function(req, res, next) {
   res.send(obj);
 });
 
-router.get('/:name/branches', function(req, res, next){
+router.get('/:name/branch', function(req, res, next){
 var obj = {
     "Doctors":  [
             {
