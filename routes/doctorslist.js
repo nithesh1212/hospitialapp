@@ -4,36 +4,37 @@ var router = express.Router();
 /* GET users listing. */
 router.get('/', function(req, res, next) {
 	var obj = {
-    "Branches": {
-        "Branch": [
+    "Doctors": {
+        "Doctor": [
             {
-                "branchname": "Kondapur",
-                "numberofdepartments": "12",
-                "id": "kims001",
+                "doctorname": "S.Sandeep",
+                "departments": "Cardiology",
+                "branch":"{Kondapur,Gachibowli,Somajiguda}",
+                "id": "card001",
             },
              {
-                "departmentname": "Gachibowli",
-                "numberofdepartments": "15",
-                "id": "kims002",
-                
+                "doctorname": "M.Jagan",
+                "departments": "Neurology",
+                "branch":"{Kondapur,Gachibowli,Filmnagar}",
+                "id": "card001",
+            },
+           {
+                "doctorname": "M.Ramakrishna",
+                "departments": "Endrocrinology",
+                "branch":"{Kondapur,Secundrabad,Somajiguda}",
+                "id": "card001",
             },
              {
-                "departmentname": "Somajiguda",
-                "numberofdepartments": "18",
-                "id": "kims003",
-                
+                "doctorname": "G.Anil",
+                "departments": "Nephrology",
+                "branch":"{Filmnagar,Secundrabad,Somajiguda}",
+                "id": "card001",
             },
              {
-                "departmentname": "Film Nagar",
-                "numberofdepartments": "16",
-                "id": "kiimms004",
-               
-            },
-             {
-                "departmentname": "Secundrabad",
-               "numberofdepartments": "12",
-                "id": "kims005",
-                
+                "doctorname": "M.Nithesh",
+                "departments": "E.N.T",
+                "branch":"{Kondapur,Gachibowli,Somajiguda}",
+                "id": "card001",
             },
         ]
     }
