@@ -3,63 +3,37 @@ var router = express.Router();
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
-	var obj = {
-    "Departments": {
-        "Department": [
+    var obj = {
+    "Branches": {
+        "Branch": [
             {
-                "departmentname": "Cardiology",
-                "availabllity": "Yes",
-                "id": "Hospitial0001",
-                "data": [
-                    {
-                        "numberofdoctors": "15",
-                        "numberofdoctorsavailable": "12,000 CAD",
-                    }
-                ]
+                "branchname": "Kondapur",
+                "numberofdepartments": "12",
+                "id": "kims001",
             },
              {
-                "departmentname": "Dermatology",
-                "availabllity": "Yes",
-                "id": "Hospitial0001",
-                "data": [
-                    {
-                        "numberofdoctors": "15",
-                        "numberofdoctorsavailable": "12,000 CAD",
-                    }
-                ]
+                "departmentname": "Gachibowli",
+                "numberofdepartments": "15",
+                "id": "kims002",
+                
             },
              {
-                "departmentname": "Endocrinology",
-                "availabllity": "Yes",
-                "id": "Hospitial0001",
-                "data": [
-                    {
-                        "numberofdoctors": "15",
-                        "numberofdoctorsavailable": "12,000 CAD",
-                    }
-                ]
+                "departmentname": "Somajiguda",
+                "numberofdepartments": "18",
+                "id": "kims003",
+                
             },
              {
-                "departmentname": "ENT",
-                "availabllity": "Yes",
-                "id": "Hospitial0001",
-                "data": [
-                    {
-                        "numberofdoctors": "15",
-                        "numberofdoctorsavailable": "12,000 CAD",
-                    }
-                ]
+                "departmentname": "Film Nagar",
+                "numberofdepartments": "16",
+                "id": "kiimms004",
+               
             },
              {
-                "departmentname": "Nephrology",
-                "availabllity": "Yes",
-                "id": "Hospitial0001",
-                "data": [
-                    {
-                        "numberofdoctors": "15",
-                        "numberofdoctorsavailable": "12,000 CAD",
-                    }
-                ]
+                "departmentname": "Secundrabad",
+               "numberofdepartments": "12",
+                "id": "kims005",
+                
             },
         ]
     }
