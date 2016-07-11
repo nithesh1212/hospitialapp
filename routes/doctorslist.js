@@ -1,8 +1,9 @@
 var express = require('express');
 var router = express.Router();
+var Promise = require('bluebird');
 
 /* GET users listing. */
-router.get('/', function(req, res, next) {
+router.get('/:name', function(req, res, next) {
 	var obj = {
     "Doctors":  [
             {
@@ -38,12 +39,26 @@ router.get('/', function(req, res, next) {
         ]
 }
 
-
-
-  res.send(obj);
+ return new Promise(function (resolve, reject) {
+    var temp = {
+        "Doctors":[]
+    }
+    var doname =req.params.name;
+        for(var i=0; i< obj.Doctors.length; i++){
+             if(obj.Doctors[i].doctorname.indexOf(doname) > -1) {
+                temp.Doctors.push(obj.Doctors[i]);
+             }
+        }
+      res.send(temp);
+    });
+  
 });
 
-router.get('/:name/branch', function(req, res, next){
+
+
+
+
+router.get('/:name/branches', function(req, res, next){
 var obj = {
     "Doctors":  [
             {
