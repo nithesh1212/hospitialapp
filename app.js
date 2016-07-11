@@ -11,6 +11,7 @@ var departments = require('./routes/departments.js');
 var branches = require('./routes/branches.js');
 var doctorslist = require('./routes/doctorslist.js');
 var appointmentdetails = require('./routes/appointmentdetails.js');
+var departmentdoctorslist = require('./routes/departmentdoctorslist.js');
 
 var app = express();
 
@@ -28,10 +29,11 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
 app.use('/users', users);
-app.use('/departments', departments);
+app.use('/departments', departments);   
 app.use('/branches', branches);
 app.use('/doctorslist', doctorslist);
 app.use('/appointmentdetails', appointmentdetails);
+app.use('/departmentdoctorslist', departmentdoctorslist);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
