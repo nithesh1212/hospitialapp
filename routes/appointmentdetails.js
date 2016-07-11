@@ -5,7 +5,7 @@ var router = express.Router();
 router.get('/', function(req, res, next) {
     var obj = {
     "BookedAppointment":{
-        "AppointmentDetails"
+        "AppointmentDetails":
         {
         
                     "PatientName"   :  "Nithesh",
@@ -18,6 +18,8 @@ router.get('/', function(req, res, next) {
                     "Time"          :  "2PM to 3 PM"
 
         }
+}
+
 }
 
   res.send(obj);
