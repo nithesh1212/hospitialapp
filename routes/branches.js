@@ -12,25 +12,25 @@ router.get('/', function(req, res, next) {
                 "id": "kims001",
             },
              {
-                "departmentname": "Gachibowli",
+                "branchname": "Gachibowli",
                 "numberofdepartments": "15",
                 "id": "kims002",
                 
             },
              {
-                "departmentname": "Somajiguda",
+                "branchname": "Somajiguda",
                 "numberofdepartments": "18",
                 "id": "kims003",
                 
             },
              {
-                "departmentname": "Film Nagar",
+                "branchname": "Film Nagar",
                 "numberofdepartments": "16",
                 "id": "kiimms004",
                
             },
              {
-                "departmentname": "Secundrabad",
+                "branchname": "Secundrabad",
                "numberofdepartments": "12",
                 "id": "kims005",
                 
