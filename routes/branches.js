@@ -102,7 +102,7 @@ router.get('/:location', function(req, res, next)
   {
         function distance(lat1, lon1, lat2, lon2, unit) 
         {
-            
+
             var radlat1 = Math.PI * lat1/180
             var radlat2 = Math.PI * lat2/180
             var theta = lon1-lon2
@@ -124,7 +124,7 @@ router.get('/:location', function(req, res, next)
             
         var dist = distance(commasep[0],commasep[1],branch.lat,branch.long,'K');
         
-        if(dist<2)
+        if(dist<6)
             {
             temp.Branches.push(branch);
             
