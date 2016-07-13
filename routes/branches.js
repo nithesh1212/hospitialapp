@@ -234,7 +234,7 @@ router.get('/:location', function(req, res, next)
             
         var dist = distance(commasep[0],commasep[1],branch.lat,branch.long,'K');
         
-            if(dist>5)
+            if(dist<5)
             {        
                 branch.dist = dist.toFixed(2);
                 temp.Branches.push(branch);
