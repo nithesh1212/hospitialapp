@@ -12,6 +12,7 @@ var branches = require('./routes/branches.js');
 var doctorslist = require('./routes/doctorslist.js');
 var appointmentdetails = require('./routes/appointmentdetails.js');
 var departmentdoctorslist = require('./routes/departmentdoctorslist.js');
+var finaldoctorslist = require('./routes/finaldoctorslist.js');
 
 var app = express();
 
@@ -34,6 +35,7 @@ app.use('/branches', branches);
 app.use('/doctorslist', doctorslist);
 app.use('/appointmentdetails', appointmentdetails);
 app.use('/departmentdoctorslist', departmentdoctorslist);
+app.use('/finaldoctorslist', finaldoctorslist);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
