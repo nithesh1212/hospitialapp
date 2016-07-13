@@ -234,7 +234,7 @@ router.get('/:location', function(req, res, next)
             
         var dist = distance(commasep[0],commasep[1],branch.lat,branch.long,'K');
         
-            if(dist<5)
+            if(dist>5)
             {        
                 branch.dist = dist.toFixed(2);
                 temp.Branches.push(branch);
@@ -261,23 +261,23 @@ var obj =
                 "doctors":[
                  {"name":"S.Sandeep",
                    "department":"Cardiology",
-                   "timings":"Available from Monday to Friday between 10AM to 11AM"
+                   "timings":"10AM to 11AM"
                  },
                  {"name":"G.Anil",
                    "department":"Nephrology",
-                   "timings":"Available from Monday to Friday between 11AM to 12PM"
+                   "timings":"11AM to 12PM"
                  },
                  {"name":"M.Jagan",
                    "department":"Neurology",
-                   "timings":"Available from Monday to Friday between 12PM to 1PM"
+                   "timings":"12PM to 1PM"
                  },
                  {"name":"S.Sudha",
                    "department":"E.N.T",
-                   "timings":"Available from Monday to Friday between 3PM to 4PM"
+                   "timings":"3PM to 4PM"
                  },
                  {"name":"Sj.Manasa",
                    "department":"Endrocrinology",
-                   "timings":"Available from Monday to Friday between 4PM to 5AM"
+                   "timings":"4PM to 5AM"
                  },
                 ]
             },
@@ -290,23 +290,23 @@ var obj =
                 "doctors":[
                  {"name":"S.Sandeep",
                    "department":"Cardiology",
-                   "timings":"Available from Monday to Friday between 11AM to 12PM"
+                   "timings":"11AM to 12PM"
                  },
                  {"name":"G.Anil",
                    "department":"Nephrology",
-                   "timings":"Available from Monday to Friday between 12PM to 1PM"
+                   "timings":"12PM to 1PM"
                  },
                  {"name":"M.Jagan",
                    "department":"Neurology",
-                   "timings":"Available from Monday to Friday between 1PM to 2PM"
+                   "timings":"1PM to 2PM"
                  },
                  {"name":"S.Sudha",
                    "department":"E.N.T",
-                   "timings":"Available from Monday to Friday between 2PM to 3PM"
+                   "timings":"2PM to 3PM"
                  },
                  {"name":"Sj.Manasa",
                    "department":"Endrocrinology",
-                   "timings":"Available from Monday to Friday between 3PM to 4AM"
+                   "timings":"3PM to 4AM"
                  },
                 ]
              },
@@ -319,23 +319,23 @@ var obj =
                 "doctors":[
                  {"name":"S.Sandeep",
                    "department":"Cardiology",
-                   "timings":"Available from Monday to Friday between 1PM to 2PM"
+                   "timings":"1PM to 2PM"
                  },
                  {"name":"G.Anil",
                    "department":"Nephrology",
-                   "timings":"Available from Monday to Friday between 3PM to 4PM"
+                   "timings":"3PM to 4PM"
                  },
                  {"name":"M.Jagan",
                    "department":"Neurology",
-                   "timings":"Available from Monday to Friday between 5PM to 6PM"
+                   "timings":"5PM to 6PM"
                  },
                  {"name":"S.Sudha",
                    "department":"E.N.T",
-                   "timings":"Available from Monday to Friday between 7PM to 8PM"
+                   "timings":"7PM to 8PM"
                  },
                  {"name":"Sj.Manasa",
                    "department":"Endrocrinology",
-                   "timings":"Available from Monday to Friday between 2PM to 3PM"
+                   "timings":"2PM to 3PM"
                  },
                 ]
                 
@@ -348,23 +348,23 @@ var obj =
                 "doctors":[
                  {"name":"S.Sandeep",
                    "department":"Cardiology",
-                   "timings":"Available from Monday to Friday between 5PM to 6PM"
+                   "timings":"5PM to 6PM"
                  },
                  {"name":"G.Anil",
                    "department":"Nephrology",
-                   "timings":"Available from Monday to Friday between 6PM to 7PM"
+                   "timings":"6PM to 7PM"
                  },
                  {"name":"M.Jagan",
                    "department":"Neurology",
-                   "timings":"Available from Monday to Friday between 10AM to 11AM"
+                   "timings":"10AM to 11AM"
                  },
                  {"name":"S.Sudha",
                    "department":"E.N.T",
-                   "timings":"Available from Monday to Friday between 5PM to 6PPM"
+                   "timings":"5PM to 6PPM"
                  },
                  {"name":"Sj.Manasa",
                    "department":"Endrocrinology",
-                   "timings":"Available from Monday to Friday between 7PM to 8AM"
+                   "timings":"7PM to 8AM"
                  },
                 ]
                
@@ -414,7 +414,18 @@ router.get('/:branchname/doctors', function(req, res, next)
       
     });
 
+   router.get('/:branchname/departments', function(req, res, next)
+ {
+    
+    return new Promise(function (resolve, reject) {
+        obj.Branches.map(function(branch){
+                if(branch.branchname === req.params.branchname){
+                   res.send(branch);  
+                }
+        });
       
+    });
+    
 });
 
 
