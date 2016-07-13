@@ -127,12 +127,15 @@ router.get('/:location', function(req, res, next)
         if(dist<6)
             {
                 branch.dist = dist.toFixed(2);
-            temp.Branches.push(branch);
+                temp.Branches.push(branch);
             
             }
         });
      
-     res.send(temp);
+     temp.Branches.sort(function(a, b){
+ return a.dist-b.dist
+})
+res.send(temp);
 });
     
 });
