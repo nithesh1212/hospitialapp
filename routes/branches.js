@@ -126,7 +126,7 @@ router.get('/:location', function(req, res, next)
         
         if(dist<6)
             {
-                branch.dist = dist;
+                branch.dist = dist.toFixed(2);
             temp.Branches.push(branch);
             
             }
