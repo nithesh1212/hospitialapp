@@ -261,23 +261,23 @@ var obj =
                 "doctors":[
                  {"name":"S.Sandeep",
                    "department":"Cardiology",
-                   "timings":"10AM to 11AM"
+                   "timings":"Available from Monday to Friday between 10AM to 11AM"
                  },
                  {"name":"G.Anil",
                    "department":"Nephrology",
-                   "timings":"11AM to 12PM"
+                   "timings":"Available from Monday to Friday between 11AM to 12PM"
                  },
                  {"name":"M.Jagan",
                    "department":"Neurology",
-                   "timings":"12PM to 1PM"
+                   "timings":"Available from Monday to Friday between 12PM to 1PM"
                  },
                  {"name":"S.Sudha",
                    "department":"E.N.T",
-                   "timings":"3PM to 4PM"
+                   "timings":"Available from Monday to Friday between 3PM to 4PM"
                  },
                  {"name":"Sj.Manasa",
                    "department":"Endrocrinology",
-                   "timings":"4PM to 5AM"
+                   "timings":"Available from Monday to Friday between 4PM to 5AM"
                  },
                 ]
             },
@@ -290,23 +290,23 @@ var obj =
                 "doctors":[
                  {"name":"S.Sandeep",
                    "department":"Cardiology",
-                   "timings":"11AM to 12PM"
+                   "timings":"Available from Monday to Friday between 11AM to 12PM"
                  },
                  {"name":"G.Anil",
                    "department":"Nephrology",
-                   "timings":"12PM to 1PM"
+                   "timings":"Available from Monday to Friday between 12PM to 1PM"
                  },
                  {"name":"M.Jagan",
                    "department":"Neurology",
-                   "timings":"1PM to 2PM"
+                   "timings":"Available from Monday to Friday between 1PM to 2PM"
                  },
                  {"name":"S.Sudha",
                    "department":"E.N.T",
-                   "timings":"2PM to 3PM"
+                   "timings":"Available from Monday to Friday between 2PM to 3PM"
                  },
                  {"name":"Sj.Manasa",
                    "department":"Endrocrinology",
-                   "timings":"3PM to 4AM"
+                   "timings":"Available from Monday to Friday between 3PM to 4AM"
                  },
                 ]
              },
@@ -319,23 +319,23 @@ var obj =
                 "doctors":[
                  {"name":"S.Sandeep",
                    "department":"Cardiology",
-                   "timings":"1PM to 2PM"
+                   "timings":"Available from Monday to Friday between 1PM to 2PM"
                  },
                  {"name":"G.Anil",
                    "department":"Nephrology",
-                   "timings":"3PM to 4PM"
+                   "timings":"Available from Monday to Friday between 3PM to 4PM"
                  },
                  {"name":"M.Jagan",
                    "department":"Neurology",
-                   "timings":"5PM to 6PM"
+                   "timings":"Available from Monday to Friday between 5PM to 6PM"
                  },
                  {"name":"S.Sudha",
                    "department":"E.N.T",
-                   "timings":"7PM to 8PM"
+                   "timings":"Available from Monday to Friday between 7PM to 8PM"
                  },
                  {"name":"Sj.Manasa",
                    "department":"Endrocrinology",
-                   "timings":"2PM to 3PM"
+                   "timings":"Available from Monday to Friday between 2PM to 3PM"
                  },
                 ]
                 
@@ -348,23 +348,23 @@ var obj =
                 "doctors":[
                  {"name":"S.Sandeep",
                    "department":"Cardiology",
-                   "timings":"5PM to 6PM"
+                   "timings":"Available from Monday to Friday between 5PM to 6PM"
                  },
                  {"name":"G.Anil",
                    "department":"Nephrology",
-                   "timings":"6PM to 7PM"
+                   "timings":"Available from Monday to Friday between 6PM to 7PM"
                  },
                  {"name":"M.Jagan",
                    "department":"Neurology",
-                   "timings":"10AM to 11AM"
+                   "timings":"Available from Monday to Friday between 10AM to 11AM"
                  },
                  {"name":"S.Sudha",
                    "department":"E.N.T",
-                   "timings":"5PM to 6PPM"
+                   "timings":"Available from Monday to Friday between 5PM to 6PPM"
                  },
                  {"name":"Sj.Manasa",
                    "department":"Endrocrinology",
-                   "timings":"7PM to 8AM"
+                   "timings":"Available from Monday to Friday between 7PM to 8AM"
                  },
                 ]
                
@@ -377,23 +377,23 @@ var obj =
                 "doctors":[
                  {"name":"S.Sandeep",
                    "department":"Cardiology",
-                   "timings":"12PM to 1PM"
+                   "timings":"Available from Monday to Friday between 12PM to 1PM"
                  },
                  {"name":"G.Anil",
                    "department":"Nephrology",
-                   "timings":"10AM to 11AM"
+                   "timings":"Available from Monday to Friday between 10AM to 11AM"
                  },
                  {"name":"M.Jagan",
                    "department":"Neurology",
-                   "timings":"6PM to 7PM"
+                   "timings":"Available from Monday to Friday between 6PM to 7PM"
                  },
                  {"name":"S.Sudha",
                    "department":"E.N.T",
-                   "timings":"3PM to 4PM"
+                   "timings":"Available from Monday to Friday between 3PM to 4PM"
                  },
                  {"name":"Sj.Manasa",
                    "department":"Endrocrinology",
-                   "timings":"5PM to 6AM"
+                   "timings":"Available from Monday to Friday between 5PM to 6AM"
                  },
                 ]
                 
@@ -406,9 +406,6 @@ router.get('/:branchname/doctors', function(req, res, next)
  {
     
     return new Promise(function (resolve, reject) {
-    var temp = {
-        "doctors":[]
-    }
         obj.Branches.map(function(branch){
                 if(branch.branchname === req.params.branchname){
                    res.send(branch);  
@@ -416,7 +413,8 @@ router.get('/:branchname/doctors', function(req, res, next)
         });
       
     });
-    
+
+      
 });
 
 
