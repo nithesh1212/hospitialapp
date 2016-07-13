@@ -414,18 +414,7 @@ router.get('/:branchname/doctors', function(req, res, next)
       
     });
 
-   router.get('/:branchname/departments', function(req, res, next)
- {
-    
-    return new Promise(function (resolve, reject) {
-        obj.Branches.map(function(branch){
-                if(branch.branchname === req.params.branchname){
-                   res.send(branch);  
-                }
-        });
-      
-    });
-    
+   
 });
 
 
