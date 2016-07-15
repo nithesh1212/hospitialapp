@@ -277,7 +277,7 @@ var obj =
                  },
                  {"name":"Sj.Manasa",
                    "department":"Endrocrinology",
-                   "timings":"4PM to 5AM"
+                   "timings":"4PM to 5PM"
                  },
                 ]
             },
@@ -306,7 +306,7 @@ var obj =
                  },
                  {"name":"Sj.Manasa",
                    "department":"Endrocrinology",
-                   "timings":"3PM to 4AM"
+                   "timings":"3PM to 4PM"
                  },
                 ]
              },
@@ -360,11 +360,11 @@ var obj =
                  },
                  {"name":"S.Sudha",
                    "department":"E.N.T",
-                   "timings":"5PM to 6PPM"
+                   "timings":"5PM to 6PM"
                  },
                  {"name":"Sj.Manasa",
                    "department":"Endrocrinology",
-                   "timings":"7PM to 8AM"
+                   "timings":"7PM to 8PM"
                  },
                 ]
                
